@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>  Bilal Shaukat — Frontend Web Developer</title>
+<title> 💻 Bilal Shaukat — Frontend Developer & Software Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -218,6 +218,12 @@
 
   /* ---------- Toolbox: orbiting chips ---------- */
   .tool-grid{ display:flex; flex-wrap:wrap; gap:14px; }
+  .tool-group{ margin-bottom:28px; }
+  .tool-group:last-child{ margin-bottom:0; }
+  .tool-group-label{
+    font-family:var(--font-mono); font-size:11px; letter-spacing:0.1em; color:var(--paper-dim);
+    margin-bottom:14px; display:block; text-transform:uppercase;
+  }
   .tool-chip{
     font-family:var(--font-mono); font-size:13px; padding:12px 20px; border-radius:100px;
     border:1px solid var(--glass-border); background:var(--glass); transition: all .3s ease; cursor:default;
@@ -283,6 +289,7 @@
         <a href="#about" class="hoverable">About</a>
         <a href="#services" class="hoverable">Services</a>
         <a href="#work" class="hoverable">Projects</a>
+        <a href="#software" class="hoverable">Software</a>
         <a href="#stack" class="hoverable">Stack</a>
         <a href="#contact" class="hoverable">Contact</a>
       </nav>
@@ -300,9 +307,9 @@
 <main>
   <section class="hero container" id="top">
     <canvas id="hero-scene"></canvas>
-    <div class="eyebrow">FRONTEND WEB DEVELOPER · AVAILABLE NOW</div>
-    <h1>Hii, I'm Bilal — <span class="grad">clean, responsive</span><br>websites with a little magic.</h1>
-    <p class="hero-sub">I design and build responsive websites, landing pages, and business sites that look sharp on every screen and feel great to use.</p>
+    <div class="eyebrow">FRONTEND DEVELOPER & SOFTWARE ENGINEER · AVAILABLE NOW</div>
+    <h1>Hii, I'm Bilal — <span class="grad">clean, responsive</span><br>websites & solid software.</h1>
+    <p class="hero-sub">I build responsive websites, landing pages, and business sites — and solve problems with Java, Python, and C++ on the software side.</p>
     <div class="hero-actions">
       <a href="#services" class="btn hoverable"><span>See my services</span></a>
       <a href="#contact" class="btn ghost hoverable"><span>Get a quote →</span></a>
@@ -318,6 +325,7 @@
         <h2 style="font-family:var(--font-display); font-weight:700; font-size:clamp(26px,3.4vw,38px); margin:16px 0 18px 0;">Hii, Bilal here 👋</h2>
         <p>I'm a <b>frontend web developer</b> who enjoys turning ideas into clean, responsive websites. I'm just starting out professionally, but I'm serious about doing quality work and learning fast with every project.</p>
         <p>I focus on <b>responsive web design</b>, <b>landing pages</b>, and <b>business websites</b> — sites that work as well on a phone as they do on a desktop, without unnecessary bloat.</p>
+        <p>Alongside frontend development, I also have a strong CS foundation in <b>Python, Java, C++, OOP, and SQL</b> — which shapes how I structure and problem-solve every project, not just how it looks.</p>
         <div class="stats-row">
           <div class="stat"><div class="num">100%</div><div class="lbl">RESPONSIVE BUILDS</div></div>
           <div class="stat"><div class="num">1–2</div><div class="lbl">WEEK TURNAROUND</div></div>
@@ -377,6 +385,31 @@
     </div>
   </section>
 
+  <section class="section container" id="software">
+    <div class="section-head reveal">
+      <div class="eyebrow">SOFTWARE PROJECTS</div>
+      <h2>Software & problem-solving.</h2>
+      <p>Separate from web work — this is where Java, Python, and C++ projects will show up as I build them.</p>
+    </div>
+    <div class="work-grid">
+      <div class="soon-card reveal">
+        <div class="soon-tag">BUILT</div>
+        <h3>Travel Expense Ledger</h3>
+        <p>A Java application for tracking and organizing travel expenses — built around OOP with classes & objects, file handling for saving data, Collections (ArrayList, HashMap) for managing records, and exception handling for reliability.</p>
+      </div>
+      <div class="soon-card reveal">
+        <div class="soon-tag">COMING SOON</div>
+        <h3>Python Project</h3>
+        <p>A scripting or data-focused build — case study coming shortly.</p>
+      </div>
+      <div class="soon-card reveal">
+        <div class="soon-tag">BUILT</div>
+        <h3>Zombie Survival Arena</h3>
+        <p>A C++ survival game built to apply core DSA concepts in a real project — arrays & linked lists for entities, stacks & queues for turns and events, trees/graphs for map or decision logic, plus recursion & sorting for game logic.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="section container" id="process">
     <div class="section-head reveal"><div class="eyebrow">PROCESS</div><h2>How we'd work together.</h2><p>Four stages. Full visibility the whole way.</p></div>
     <div class="process-grid">
@@ -389,10 +422,22 @@
 
   <section class="section container" id="stack">
     <div class="section-head reveal"><div class="eyebrow">TOOLBOX</div><h2>What I build with.</h2></div>
-    <div class="tool-grid reveal">
-      <span class="tool-chip">HTML5</span><span class="tool-chip">CSS3</span><span class="tool-chip">JavaScript</span>
-      <span class="tool-chip">React</span><span class="tool-chip">Tailwind CSS</span><span class="tool-chip">WordPress</span>
-      <span class="tool-chip">Git & GitHub</span><span class="tool-chip">Figma</span><span class="tool-chip">AI</span>
+
+    <div class="tool-group reveal">
+      <span class="tool-group-label">Frontend</span>
+      <div class="tool-grid">
+        <span class="tool-chip">HTML5</span><span class="tool-chip">CSS3</span><span class="tool-chip">JavaScript</span>
+        <span class="tool-chip">React</span><span class="tool-chip">Tailwind CSS</span><span class="tool-chip">WordPress</span>
+        <span class="tool-chip">Git & GitHub</span><span class="tool-chip">Figma</span><span class="tool-chip">AI</span>
+      </div>
+    </div>
+
+    <div class="tool-group reveal">
+      <span class="tool-group-label">Core CS / Programming</span>
+      <div class="tool-grid">
+        <span class="tool-chip">Python</span><span class="tool-chip">Java</span><span class="tool-chip">C++</span>
+        <span class="tool-chip">OOP</span><span class="tool-chip">SQL</span>
+      </div>
     </div>
   </section>
 
