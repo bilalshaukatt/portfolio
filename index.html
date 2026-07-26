@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bilal Shaukat — Frontend Web Developer</title>
+<title> 💻 Bilal Shaukat — Frontend Web Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -90,6 +90,16 @@
   }
   .btn span{ position:relative; z-index:1; }
   .btn.ghost{ background:transparent; border-color:var(--glass-border); color:var(--paper); }
+  .linkedin-btn{
+    background:#0A66C2; box-shadow:0 0 0 0 rgba(10,102,194,0.5);
+    animation: linkedinPulse 2.4s ease-in-out infinite;
+  }
+  .linkedin-btn:hover{ background:#0e76d8; }
+  @keyframes linkedinPulse{
+    0%, 100%{ box-shadow:0 0 0 0 rgba(10,102,194,0.45); }
+    50%{ box-shadow:0 0 0 6px rgba(10,102,194,0); }
+  }
+  @media (prefers-reduced-motion: reduce){ .linkedin-btn{ animation:none; } }
 
   /* ---------- Hero ---------- */
   .hero{ min-height:100vh; display:flex; flex-direction:column; justify-content:center; padding-top:140px; position:relative; }
@@ -268,7 +278,7 @@
 <header>
   <div class="nav-inner">
     <div class="nav">
-      <div class="logo"><span></span> — Bilal Shaukat</div>
+      <div class="logo">Bilal Shaukat</div>
       <nav class="links">
         <a href="#about" class="hoverable">About</a>
         <a href="#services" class="hoverable">Services</a>
@@ -276,7 +286,13 @@
         <a href="#stack" class="hoverable">Stack</a>
         <a href="#contact" class="hoverable">Contact</a>
       </nav>
-      <a href="#contact" class="btn hoverable"><span>Start a project</span></a>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <a href="https://www.linkedin.com/in/bilal-shaukat-cs" target="_blank" rel="noopener" class="btn linkedin-btn hoverable">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="position:relative; z-index:1;"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="#contact" class="btn hoverable"><span>Start a project</span></a>
+      </div>
     </div>
   </div>
 </header>
@@ -376,7 +392,7 @@
     <div class="tool-grid reveal">
       <span class="tool-chip">HTML5</span><span class="tool-chip">CSS3</span><span class="tool-chip">JavaScript</span>
       <span class="tool-chip">React</span><span class="tool-chip">Tailwind CSS</span><span class="tool-chip">WordPress</span>
-      <span class="tool-chip">Git & GitHub</span><span class="tool-chip">Figma</span>
+      <span class="tool-chip">Git & GitHub</span><span class="tool-chip">Figma</span><span class="tool-chip">AI</span>
     </div>
   </section>
 
